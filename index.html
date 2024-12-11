@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>idbiz.id - portofolio</title>
+
+  <link rel="stylesheet" href="css/portofolio.css"> <!-- Link ke style.css -->
+  <link rel="stylesheet" href="css/element.css">
+  <link rel="stylesheet" href="css/fx.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="bg-gray-100">
+
+   <!-- ## NAVBAR ## -->
+  <nav class="flex items-center top-0 sticky backdrop-blur-sm border-b border-gray-700 text-white bg-gray-900/80 
+  grid grid-cols-1 md:grid-cols-3 text-center px-2 xl:px-24 py-4 ">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <img 
+          class="rounded-full h-12 w-12"
+          src="/assets/img/idbiz.png" 
+          alt=""
+        />
+        <h1 class="font-bold text-2xl">
+          idBiz.
+        </h1>
+      </div>
+      <div id="menu-collapse" class="text-2xl flex items-center align-center justify-end linked md:hidden">
+        <i class="ph ph-list"></i>
+      </div>
+    </div>
+
+    <div class="md:col-span-2 mt-2 md:m-0 no-copy">
+      <ul id="menu-list" class="flex justify-between items-center text-xs md:text-md lg:text-lg gap-4 hidden md:flex">
+        <li id="home" class="linked">
+          <a href="/index.html">Home</a>
+      </li>
+      <li id="abt-us" class="linked">
+          <a href="/pages/about_us.html">About Us</a>
+      </li>
+      <li class="linked">
+          <a href="">Services</a>
+      </li>
+      <li class="linked hidden md:block">
+          <a href="">Become a Seller</a>
+      </li>
+      <li class="cursor-default text-[#134B70] hidden md:block">|</li>
+      <li id="sign-in" class="linked">
+          <a href="/pages/login.html">Sign In</a>
+      </li>
+      <li id="join-in" class="btn linked-btn">
+          <a href="/pages/login.html">Join</a>
+      </li>
+      </ul>
+    </div>
+
+  </nav>
+  <!-- ## END NAVBAR ## -->
+
+
+  <!-- Header -->
+  <header class="bg-blue-900 text-white p-4">
+    <h1 class="text-center text-2xl font-bold">Portofolio Store</h1>
+  </header>
+
+  <!-- Filters Section -->
+<section class="p-4 bg-white shadow-md">
+  <div class="flex flex-wrap gap-4 items-center justify-between">
+    <!-- Service Options Dropdown -->
+    <select class="p-2 border rounded-md w-full sm:w-auto">
+      <option>Service Options</option>
+      <option>Pro Services</option>
+      <option>Basic Services</option>
+    </select>
+
+    <!-- Seller Details Dropdown -->
+    <select class="p-2 border rounded-md w-full sm:w-auto">
+      <option>Seller Details</option>
+      <option>Top Rated</option>
+      <option>New Sellers</option>
+    </select>
+
+    <!-- Budget Dropdown -->
+    <select class="p-2 border rounded-md w-full sm:w-auto">
+      <option value="budget">Budget</option>
+      <option value="under-100000">Under Rp 100.000</option>
+      <option value="100000-500000">Rp 100.000 - Rp 500.000</option>
+    </select>
+
+    <!-- Delivery Time Dropdown -->
+    <select class="p-2 border rounded-md w-full sm:w-auto">
+      <option>Delivery Time</option>
+      <option>24 Hours</option>
+      <option>1 Week</option>
+    </select>
+  </div>
+</section>
+
+<!-- Portfolio Item 1 -->
+<div class="bg-white shadow-md rounded-lg overflow-hidden cursor-pointer portfolio-item p-6">
+  <div class="flex items-center gap-4">
+    <img
+      src="https://via.placeholder.com/100" 
+      alt="Profile Picture" 
+      class="rounded-full w-24 h-24 object-cover"
+    />
+    <div>
+      <h2 class="text-xl font-bold">Hi, I'm Seb.</h2>
+      <p class="text-gray-600">
+        I'm a web developer from Southampton, UK. Currently lead developer at a local agency, 
+        <a href="https://fhoke.com" class="text-blue-500 underline">Fhoke</a>. 
+        In my spare time, I enjoy DIY, gaming, and building my own projects.
+      </p>
+      <p class="text-gray-600 mt-2">My preferred tools are PHP, Laravel, and Vue.js.</p>
+      <div class="flex gap-4 mt-4">
+        <a href="https://github.com" class="text-blue-500 underline">GitHub</a>
+        <a href="https://twitter.com" class="text-blue-500 underline">Twitter</a>
+        <a href="https://instagram.com" class="text-blue-500 underline">Instagram</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Portfolio Item 2 -->
+<div class="bg-white shadow-md rounded-lg overflow-hidden cursor-pointer portfolio-item p-6">
+  <div class="flex items-center gap-4">
+    <img
+      src="https://via.placeholder.com/100" 
+      alt="Profile Picture Alice" 
+      class="rounded-full w-24 h-24 object-cover"
+    />
+    <div>
+      <h2 class="text-xl font-bold">Hi, I'm Alice.</h2>
+      <p class="text-gray-600">
+        I'm a UX/UI designer from New York. Passionate about creating intuitive and user-friendly designs.
+        Currently working at <a href="https://designstudio.com" class="text-blue-500 underline">Design Studio</a>.
+      </p>
+      <p class="text-gray-600 mt-2">My favorite tools are Figma, Sketch, and Adobe XD.</p>
+      <div class="flex gap-4 mt-4">
+        <a href="https://dribbble.com" class="text-blue-500 underline">Dribbble</a>
+        <a href="https://linkedin.com" class="text-blue-500 underline">LinkedIn</a>
+        <a href="https://behance.net" class="text-blue-500 underline">Behance</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Portfolio Item 3 -->
+<div class="bg-white shadow-md rounded-lg overflow-hidden cursor-pointer portfolio-item p-6">
+  <div class="flex items-center gap-4">
+    <img
+      src="https://via.placeholder.com/100" 
+      alt="Profile Picture John" 
+      class="rounded-full w-24 h-24 object-cover"
+    />
+    <div>
+      <h2 class="text-xl font-bold">Hi, I'm John.</h2>
+      <p class="text-gray-600">
+        I'm a backend developer based in San Francisco. Specializing in scalable systems and database optimization. 
+        Currently a senior developer at <a href="https://techcorp.com" class="text-blue-500 underline">TechCorp</a>.
+      </p>
+      <p class="text-gray-600 mt-2">I work with Python, Django, and PostgreSQL.</p>
+      <div class="flex gap-4 mt-4">
+        <a href="https://github.com" class="text-blue-500 underline">GitHub</a>
+        <a href="https://twitter.com" class="text-blue-500 underline">Twitter</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Portfolio Item 4 -->
+<div class="bg-white shadow-md rounded-lg overflow-hidden cursor-pointer portfolio-item p-6">
+  <div class="flex items-center gap-4">
+    <img
+      src="https://via.placeholder.com/100" 
+      alt="Profile Picture Maria" 
+      class="rounded-full w-24 h-24 object-cover"
+    />
+    <div>
+      <h2 class="text-xl font-bold">Hi, I'm Maria.</h2>
+      <p class="text-gray-600">
+        A digital marketer from Sydney, Australia. Helping brands grow their online presence with creative strategies.
+        Currently working with <a href="https://marketingpros.com" class="text-blue-500 underline">Marketing Pros</a>.
+      </p>
+      <p class="text-gray-600 mt-2">I specialize in SEO, content marketing, and social media management.</p>
+      <div class="flex gap-4 mt-4">
+        <a href="https://linkedin.com" class="text-blue-500 underline">LinkedIn</a>
+        <a href="https://instagram.com" class="text-blue-500 underline">Instagram</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- portofolio Grid Section -->
+  <main class="p-6">
+    <div id="portofolioGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <!-- Cards will be dynamically added here -->
+    </div>
+  </main>
+
+
+  <!-- ## FOOTER ## -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 px-4 lg:px-24">
+  
+      <!-- ## Company ## -->
+      <div class="flex flex-col gap-4">
+        <h1 class="text-2xl font-bold">Company</h1>
+        <div class="flex flex-col text-sm text-gray-500 footer-list">
+          <a href="#">About idBiz</a>
+          <a href="#">Help & Support</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Press & News</a>
+          <a href="#">Partnerships</a>
+          <a href="#">Affiliates</a>
+        </div>
+      </div>
+  
+      <!-- ## Customer ## -->
+      <div class="flex flex-col gap-4">
+        <h1 class="text-xl font-bold">For Customer</h1>
+        <div class="flex flex-col text-sm text-gray-500 footer-list">
+          <a href="#">How idBiz Works</a>
+          <a href="#">idBiz Guides</a>
+          <a href="#">idBiz Learn</a>
+          <a href="#">idBiz Answers</a>
+          <a href="#">Ask idBiz</a>
+        </div>
+      </div>
+  
+      <!-- ## Designer ## -->
+      <div class="flex flex-col gap-4">
+        <h1 class="text-xl font-bold">For Designer</h1>
+        <div class="flex flex-col text-sm text-gray-500 footer-list">
+          <a href="#">Become an idbiz Seller</a>
+          <a href="#">Become an Agency</a>
+          <a href="#">Community Hub</a>
+          <a href="#">Forum</a>
+          <a href="#">Events</a>
+        </div>
+      </div>
+  
+      <!-- ## Categories ## -->
+      <div class="flex flex-col gap-4">
+        <h1 class="text-xl font-bold">Categories</h1>
+        <div class="flex flex-col text-sm text-gray-500 footer-list">
+          <a href="#">Design Graphic</a>
+          <a href="#">Photography</a>
+          <a href="#">Filmatography</a>
+          <a href="#">Editing</a>
+          <a href="#">Programming</a>
+        </div>
+      </div>
+  
+    </div>
+  
+    <!-- ## COPYRIGHT ## -->
+  
+    <div class="mx-4 lg:mx-24 mt-4 pt-2 text-gray-500 border-t border-gray-700">
+      <div class="grid grid-cols-1 md:grid-cols-2 items-center md:items-baseline">
+  
+        <div class="flex gap-4 items-baseline justify-center md:justify-start">
+          <h1 class="font-bold text-2xl">
+            idBiz.
+          </h1>
+          <p class="text-sm">© 2024 idBiz. All rights reserved.</p>
+        </div>
+        
+        <div class="flex gap-4 justify-center md:justify-end">
+          <i class="ph ph-instagram-logo text-2xl"></i>
+          <i class="ph ph-facebook-logo text-2xl"></i>
+          <i class="ph ph-discord-logo text-2xl"></i>
+          <i class="ph ph-x-logo text-2xl"></i>
+          <i class="ph ph-linkedin-logo text-2xl"></i>
+          <div class="flex  items-center gap-2 border border-gray-800 rounded-2xl px-2">
+            <i class="ph ph-globe text-2xl"></i>
+            <p class="text-md">English</p>
+          </div>
+  
+        </div>
+  
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/portofolio.js"></script> <!-- Link ke script.js -->
+  <script src="/js/nav.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
