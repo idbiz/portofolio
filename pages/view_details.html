@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designer Profile</title>
+    <link rel="stylesheet" href="/css/view_detail.css">
+    <link rel="stylesheet" href="/css/element.css">
+    <link rel="stylesheet" href="/css/fx.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+      <!-- ## NAVBAR ## -->
+  <nav class="flex items-center top-0 sticky backdrop-blur-sm border-b border-gray-700 text-white bg-gray-900/80 
+  grid grid-cols-1 md:grid-cols-3 text-center px-2 xl:px-24 py-4 ">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <img 
+          class="rounded-full h-12 w-12"
+          src="/assets/img/idbiz.png" 
+          alt=""
+        />
+        <h1 class="font-bold text-2xl">
+          idBiz.
+        </h1>
+      </div>
+      <div id="menu-collapse" class="text-2xl flex items-center align-center justify-end linked md:hidden">
+        <i class="ph ph-list"></i>
+      </div>
+    </div>
+
+    <div class="md:col-span-2 mt-2 md:m-0 no-copy">
+      <ul id="menu-list" class="flex justify-between items-center text-xs md:text-md lg:text-lg gap-4 hidden md:flex">
+        <li id="home" class="linked">
+          <a href="/index.html">Home</a>
+      </li>
+      <li id="abt-us" class="linked">
+          <a href="/pages/about_us.html">About Us</a>
+      </li>
+      <li class="linked">
+          <a href="">Services</a>
+      </li>
+      <li class="linked hidden md:block">
+          <a href="">Become a Seller</a>
+      </li>
+      <li class="cursor-default text-[#134B70] hidden md:block">|</li>
+      <li id="sign-in" class="linked">
+          <a href="/pages/login.html">Sign In</a>
+      </li>
+      <li id="join-in" class="btn linked-btn">
+          <a href="/pages/login.html">Join</a>
+      </li>
+      </ul>
+    </div>
+
+  </nav>
+  <!-- ## END NAVBAR ## -->
+
+    <main class="px-4 md:px-24 py-8">
+        <!-- Button Kembali -->
+        <div class="flex justify-start mb-4">
+            <a href="portofolio.html" class="flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                <i class="ph ph-arrow-left mr-2"></i>Kembali ke Portofolio
+            </a>
+        </div>
+
+        <!-- Profil -->
+        <section class="bg-white shadow-md rounded-lg p-8">
+            <h1 class="text-4xl font-bold mb-6 text-gray-900">Premium Shopify Dropshipping Store</h1>
+            <div class="profile-container flex flex-col md:flex-row gap-8 items-center md:items-start">
+                <div class="flex justify-center items-center w-full md:w-auto">
+                    <img src="/assets/img/irvan.jpg" alt="Irfan's Profile" class="profile-image shadow-md w-800 h-400 rounded-md">
+                </div>
+                <div class="profile-info w-full md:w-4/6">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Premium Shopify Dropshipping Store</h2>
+                    <p class="bio text-lg text-gray-700 mb-4">
+                        Irvan adalah seorang ahli dalam membangun toko dropshipping premium berbasis Shopify. Dengan pengalaman lebih dari 5 tahun, Irvan telah membantu klien dari seluruh dunia mengoptimalkan bisnis e-commerce mereka dengan desain yang menarik, strategi pemasaran yang efektif, dan layanan pelanggan yang luar biasa.
+                    </p>
+                    <p class="expertise font-medium text-gray-900 mb-4">
+                        <strong>Expertise:</strong><br>
+                        - Shopify Dropshipping<br>
+                        - Custom Store Design<br>
+                        - Product Sourcing<br>
+                        - E-commerce Strategy<br>
+                    </p>
+                    <p class="contact font-medium text-gray-900">
+                        <strong>Contact Information:</strong><br>
+                        Email: irvan.dropship@gmail.com<br>
+                        Phone: +123-456-7890
+                    </p>
+                    <div class="social-links mt-4">
+                        <a href="https://www.linkedin.com/in/irvan" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 font-semibold">LinkedIn</a> |
+                        <a href="https://www.behance.net/irvan" target="_blank" class="text-blue-600 hover:text-blue-800 font-semibold">Behance</a>
+                    </div>
+                </div>
+            </div>            
+        </section>
+
+        <!-- Featured Projects -->
+        <section class="projects mt-12">
+            <h2 class="text-3xl font-bold mb-6 text-gray-900">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="project-item bg-gray-100 shadow-md rounded-lg p-4 text-center">
+                    <img src="/assets/img/Shopify-Homepage-1.jpeg" alt="Project 1" class="rounded-md mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Shopify Store</h3>
+                </div>
+                <div class="project-item bg-gray-100 shadow-md rounded-lg p-4 text-center">
+                    <img src="/assets/img/brandlogoabc.jpg" alt="Project 2" class="rounded-md mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Custom Branding for ABC</h3>
+                </div>
+                <div class="project-item bg-gray-100 shadow-md rounded-lg p-4 text-center">
+                    <img src="/assets/img/marketingdesign.avif" alt="Project 3" class="rounded-md mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Marketing Assets Design</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 px-4 lg:px-24">
+            <!-- Content Footer -->
+            <div class="flex flex-col gap-4">
+                <h1 class="text-2xl font-bold">idBiz</h1>
+                <p class="text-sm text-gray-500">Helping creators and businesses thrive through quality connections.</p>
+            </div>
+        </div>
+        <div class="text-center mt-4 text-sm text-gray-500">
+            © 2024 idBiz. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>
